@@ -32,10 +32,11 @@ sub wpaPicker {
         19 => 'Culberson',
         20 => 'Joyce',
         21 => 'Camargo',
+        22 => 'Ortega',
         0  => 'Opposing Closer'
     );
 
-    my $player = int( rand(22) );
+    my $player = int( rand(23) );
 
     say $playerList{$player};
     say int( rand(2) )+1;
