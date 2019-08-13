@@ -1,6 +1,17 @@
 #!C:\Strawberry\perl\bin\perl.exe
 
 # This module is intended to store scripts to automatically generate binding values used for bench queries
+#
+#Module Version information:
+#
+#NAME		DATE		VERSION		COMMENT
+#Ryan Burns	2019-08-13	1.0			Initial Upload
+#
+#Module Versioning Conventions:
+#	New subquery or change that will break how the subquery works gets a new major version number
+#	Any other change increments the minor version number
+#
+#	New subquery or fundamental change 
 use 5.18.0;
 use warnings;
 use POSIX qw( strftime );
@@ -8,7 +19,7 @@ use Time::Seconds 'ONE_DAY';
 
 my @ctrlChars = qw(^ $ * + ? - | [ ] ( ) { } \ );
 
-# Name: msgParse 
+# Name: msgParse
 # Developer: Ryan Burns
 # Purpose: Generate the bindings necessary for parsing an HL7 message
 # Inputs:
